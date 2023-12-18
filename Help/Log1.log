@@ -1,0 +1,9 @@
+Microsoft HTML Help Compiler 4.74.8702
+
+Compiling c:\Users\admin\TPDC_help.chm
+
+HHC6000: Error: An internal file could not be created. Make certain there is enough disk space on the drive where you are compiling your file.
+HHC5007: Error: Fatal navigational compilation error. This is likely the result of an invalid contents (.hhc) file.
+
+
+The following files were not compiled:

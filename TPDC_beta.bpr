@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="TPDC_beta.exe"/>
+    <OBJFILES value="TPDC_beta.obj doseshell.obj Check.obj Distance.obj dose.obj DoseConfig.obj 
+      Paraset.obj About.obj Systemset.obj Changelevels.obj Info.obj PrintSet.obj 
+      BestFive.obj ShowBestFiveResult.obj Util.obj Smoothing.obj GlobalData.obj 
+      cache.obj Patient.obj GatePairDose.obj HandledPairDose.obj 
+      DisplayPairDose.obj IObserve.obj Save.obj LogFrame.obj Paramter.obj 
+      CheckRecord.obj Angle.obj StaticsQuery.obj caxSetting.obj NormPointSet.obj 
+      DTAWayChoose.obj DDStatistic.obj NormValueSetting.obj SegmentsSetting.obj 
+      ModelSetting.obj"/>
+    <RESFILES value="TPDC_beta.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) doseshell.dfm Paraset.dfm About.dfm Systemset.dfm 
+      Changelevels.dfm Info.dfm PrintSet.dfm BestFive.dfm ShowBestFiveResult.dfm 
+      Smoothing.dfm Angle.dfm StaticsQuery.dfm caxSetting.dfm NormPointSet.dfm 
+      DTAWayChoose.dfm DDStatistic.dfm NormValueSetting.dfm SegmentsSetting.dfm 
+      ModelSetting.dfm"/>
+    <LIBFILES value="thechangedll.lib"/>
+    <LIBRARIES value="TeeQR8C6.lib vcldb.lib TeeDB8C6.lib indy.lib RaizeComponentsVcl.lib 
+      dbrtl.lib bdertl.lib qrpt.lib bcbsmp.lib TeePro8C6.lib TeeGL8C6.lib 
+      TeeUI8C6.lib Tee8C6.lib TeeGL8C6.lib vclx.lib TeeUI8C6.lib TeePro8C6.lib 
+      Tee8C6.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib Tee8C6.lib TeePro8C6.lib TeeUI8C6.lib vclx.lib 
+      TeeGL8C6.lib Tee8C6.lib TeeUI8C6.lib TeeGL8C6.lib TeePro8C6.lib bcbsmp.lib 
+      qrpt.lib bdertl.lib dbrtl.lib RaizeComponentsVcl.lib indy.lib TeeDB8C6.lib 
+      vcldb.lib TeeQR8C6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi Tee8C6.bpi TeeUI8C6.bpi TeeDB8C6.bpi 
+      TeeGL8C6.bpi TeeQR8C6.bpi TeeWorld8C6.bpi TeePro8C6.bpi TeeLanguage8C6.bpi 
+      TeeImage8C6.bpi TeeTree2C6Tee8.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="TPDC_beta.cpp"/>
+    <INCLUDEPATH value="D:\Raize\RC4\Lib\BCB6;$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="D:\Raize\RC4\Lib\BCB6;$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ID:\Raize\RC4\Lib\BCB6 -I$(BCB)\OBJREPOS -I$(BCB)\Projects 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="TPDC_beta.res" FORMNAME="" UNITNAME="TPDC_beta.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TPDC_beta.cpp" FORMNAME="" UNITNAME="TPDC_beta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="doseshell.cpp" FORMNAME="FormMain" UNITNAME="doseshell" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Check.cpp" FORMNAME="" UNITNAME="Check.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Distance.cpp" FORMNAME="" UNITNAME="Distance.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dose.cpp" FORMNAME="" UNITNAME="dose.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DoseConfig.cpp" FORMNAME="" UNITNAME="DoseConfig.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Paraset.cpp" FORMNAME="Formparaset" UNITNAME="Paraset" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.cpp" FORMNAME="AboutBox" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Systemset.cpp" FORMNAME="FormsystemSet" UNITNAME="Systemset" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Changelevels.cpp" FORMNAME="FormLevels" UNITNAME="Changelevels" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Info.cpp" FORMNAME="InfoForm" UNITNAME="Info" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PrintSet.cpp" FORMNAME="PrintForm" UNITNAME="PrintSet" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BestFive.cpp" FORMNAME="BestFiveForm" UNITNAME="BestFive" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ShowBestFiveResult.cpp" FORMNAME="BestFiveResultForm" UNITNAME="ShowBestFiveResult" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Util.cpp" FORMNAME="" UNITNAME="Util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Smoothing.cpp" FORMNAME="SmoothingForm" UNITNAME="Smoothing" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GlobalData.cpp" FORMNAME="" UNITNAME="GlobalData" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cache.cpp" FORMNAME="" UNITNAME="Cache" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Patient.cpp" FORMNAME="" UNITNAME="Patient" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GatePairDose.cpp" FORMNAME="" UNITNAME="GatePairDose" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HandledPairDose.cpp" FORMNAME="" UNITNAME="HandledPairDose" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DisplayPairDose.cpp" FORMNAME="" UNITNAME="DisplayPairDose" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IObserve.cpp" FORMNAME="" UNITNAME="IObserve" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Save.cpp" FORMNAME="" UNITNAME="Save" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Util.h" FORMNAME="" UNITNAME="Util.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="thechangedll.h" FORMNAME="" UNITNAME="thechangedll.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Systemset.h" FORMNAME="" UNITNAME="Systemset.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Smoothing.h" FORMNAME="" UNITNAME="Smoothing.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ShowBestFiveResult.h" FORMNAME="" UNITNAME="ShowBestFiveResult.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Save.h" FORMNAME="" UNITNAME="Save.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PrintSet.h" FORMNAME="" UNITNAME="PrintSet.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Patient.h" FORMNAME="" UNITNAME="Patient.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Paraset.h" FORMNAME="" UNITNAME="Paraset.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Paramter.h" FORMNAME="" UNITNAME="Paramter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IObserve.h" FORMNAME="" UNITNAME="IObserve.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Info.h" FORMNAME="" UNITNAME="Info.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HandledPairDose.h" FORMNAME="" UNITNAME="HandledPairDose.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GlobalData.h" FORMNAME="" UNITNAME="GlobalData.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GatePairDose.h" FORMNAME="" UNITNAME="GatePairDose.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="doseshell.h" FORMNAME="" UNITNAME="doseshell.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DoseConfig.h" FORMNAME="" UNITNAME="DoseConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dose.h" FORMNAME="" UNITNAME="dose.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Distance.h" FORMNAME="" UNITNAME="Distance.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DisplayPairDose.h" FORMNAME="" UNITNAME="DisplayPairDose.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Check.h" FORMNAME="" UNITNAME="Check.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Changelevels.h" FORMNAME="" UNITNAME="Changelevels.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Cache.h" FORMNAME="" UNITNAME="Cache.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BestFive.h" FORMNAME="" UNITNAME="BestFive.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="About.h" FORMNAME="" UNITNAME="About.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LogFrame.cpp" FORMNAME="" UNITNAME="LogFrame" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Paramter.cpp" FORMNAME="" UNITNAME="Paramter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CheckRecord.cpp" FORMNAME="" UNITNAME="CheckRecord" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CheckRecord.h" FORMNAME="" UNITNAME="CheckRecord.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Angle.cpp" FORMNAME="FormAngle" UNITNAME="Angle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="StaticsQuery.cpp" FORMNAME="FormStaticQuery" UNITNAME="StaticsQuery" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="thechangedll.lib" FORMNAME="" UNITNAME="thechangedll.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="thechangedll.dll" FORMNAME="" UNITNAME="thechangedll.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SVTypes.dll" FORMNAME="" UNITNAME="SVTypes.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RTDoseFile.dll" FORMNAME="" UNITNAME="RTDoseFile.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Primitive.dll" FORMNAME="" UNITNAME="Primitive.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="msvcr120.dll" FORMNAME="" UNITNAME="msvcr120.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="msvcp120.dll" FORMNAME="" UNITNAME="msvcp120.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Model.dll" FORMNAME="" UNITNAME="Model.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mfc120.dll" FORMNAME="" UNITNAME="mfc120.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LoneCls.dll" FORMNAME="" UNITNAME="LoneCls.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DICOMSDK.dll" FORMNAME="" UNITNAME="DICOMSDK.dll" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="caxSetting.cpp" FORMNAME="FormCAX" UNITNAME="caxSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NormPointSet.cpp" FORMNAME="FormNormPointSet" UNITNAME="NormPointSet" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DTAWayChoose.cpp" FORMNAME="FormDTAWayChoose" UNITNAME="DTAWayChoose" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DDStatistic.cpp" FORMNAME="FormDDStatics" UNITNAME="DDStatistic" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NormValueSetting.cpp" FORMNAME="NormValueSetForm" UNITNAME="NormValueSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SegmentsSetting.cpp" FORMNAME="FormSegmentsSetting" UNITNAME="SegmentsSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ModelSetting.cpp" FORMNAME="ModelSettingForm" UNITNAME="ModelSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=D:\Raize\RC4\Lib\BCB6;$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;F:\MyDesktop\teechart8\Teechart806src\Sources
+Item3=D:\DoseCheckV1.0;E:\Projectback\Mapcheck\0510\DoseCheckV1.0;$(BCB)\OBJREPOS;$(BCB)\Projects;E:\new123;$(BCB)\include;$(BCB)\include\vcl
+Item4=E:\Projectback\Mapcheck\0510\DoseCheckV1.0;$(BCB)\OBJREPOS;$(BCB)\Projects;E:\new123;$(BCB)\include;$(BCB)\include\vcl
+Item5=$(BCB)\OBJREPOS;$(BCB)\Projects;E:\new123;$(BCB)\include;$(BCB)\include\vcl
+Item6=$(BCB)\Projects;E:\new123;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=12
+Item0=D:\Raize\RC4\Lib\BCB6;$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib
+Item1=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib
+Item2=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib;F:\MyDesktop\teechart8\Teechart806src\Sources
+Item3=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;F:\MyDesktop\teechart8\Teechart806src\Sources
+Item5=$(BCB)\OBJREPOS;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\Borland\CBuilder6\Projects\Lib
+Item6=C:\Program Files\Steema Software\TeeChart 2012 for Builder 6\Builder6\Lib;$(BCB)\OBJREPOS;D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item7=$(BCB)\OBJREPOS;D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\DoseCheckV1.0;E:\Projectback\Mapcheck\0510\DoseCheckV1.0;$(BCB)\OBJREPOS;D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;E:\new123;$(BCB)\lib\obj;$(BCB)\lib
+Item9=E:\Projectback\Mapcheck\0510\DoseCheckV1.0;$(BCB)\OBJREPOS;D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;E:\new123;$(BCB)\lib\obj;$(BCB)\lib
+Item10=$(BCB)\OBJREPOS;D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;E:\new123;$(BCB)\lib\obj;$(BCB)\lib
+Item11=D:\teechart8\Teechart806src\Sources\Compiled\Builder6\Lib;$(BCB)\Projects;E:\new123;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
